@@ -1,6 +1,6 @@
 # Atlas
 Alternate for Google Places Search and Geocoding library, with the purpose of using our custom endpoint.
-
+[![](https://jitpack.io/v/GreenDeveloperMukesh/Atlas.svg)](https://jitpack.io/#GreenDeveloperMukesh/Atlas)
 
 
 # To get a Git project into your build:
@@ -24,7 +24,6 @@ dependencies {
 	}
 ```
 
-[![](https://jitpack.io/v/GreenDeveloperMukesh/Atlas.svg)](https://jitpack.io/#GreenDeveloperMukesh/Atlas)
 
 # Step 3.
 Implement SearchListener in your Activity
