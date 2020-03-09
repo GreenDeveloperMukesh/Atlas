@@ -1,0 +1,71 @@
+{
+  "project_info": {
+    "project_number": "727663251502",
+    "firebase_url": "https://vocal-lead-240208.firebaseio.com",
+    "project_id": "vocal-lead-240208",
+    "storage_bucket": "vocal-lead-240208.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:727663251502:android:3afdbd7afbfacff9",
+        "android_client_info": {
+          "package_name": "com.taxiappz.client"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "727663251502-7rm9bc291sg2na1dcruu4cd8bcuc0gjt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.taxiappz.client",
+            "certificate_hash": "e17fd9114a7ab7bf90aa3264a8d1dce039d5dc17"
+          }
+        },
+        {
+          "client_id": "773560362624-ge789kbosgssfgcshop4vsca0pagrc91.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.taxiappz.client",
+            "certificate_hash": "048f5259cbf1e59a19948613e6d0cab246ac1c18"
+          }
+        },
+        {
+          "client_id": "727663251502-hlh65oo5ks0f6g4toaq8na01rq6ph60a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.taxiappz.client",
+            "certificate_hash": "a09513fd16b3c326163c67f82f1d6ec97398fff7"
+          }
+        },
+        {
+          "client_id": "727663251502-92mqu6grnj824vb2vkf5hek05tkhidq0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDamBFo92kfMPQIVZCWvhqJk99RANXOssc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "727663251502-92mqu6grnj824vb2vkf5hek05tkhidq0.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "727663251502-qd1tbfentsgb93cc33gc6r1h78c5es26.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.taxiappz.customer"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
