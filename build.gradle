@@ -1,33 +1,77 @@
-// Top-level build file where you can add configuration options common to all sub-projects/modules.
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
 
+repositories {
+    maven {
+        url 'https://maven.fabric.io/public'
+    }
+}
 buildscript {
     repositories {
         maven { url 'https://maven.fabric.io/public' }
-        google()
-        jcenter()
     }
+
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.5.3'
-        classpath 'com.google.gms:google-services:4.3.3'
-        classpath 'com.github.dcendents:android-maven-gradle-plugin:2.1'
-        classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.7.3'
+        // These docs use an open ended version so that our plugin
+        // can be updated quickly in response to Android tooling updates
 
-        // NOTE: Do not place your application dependencies here; they belong
-        // in the individual module build.gradle files
+        // We recommend changing it to the latest version from our changelog:
+        // https://docs.fabric.io/android/changelog.html#fabric-gradle-plugin
+        classpath 'io.fabric.tools:gradle:1.+'
+    }
+}
+android {
+    compileSdkVersion 29
+    defaultConfig {
+        applicationId "nplus.atlas"
+        minSdkVersion 19
+        targetSdkVersion 29
+        versionCode 1
+        multiDexEnabled true
+        versionName "1.0"
+        vectorDrawables.useSupportLibrary = true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+    dataBinding {
+        enabled = true
+        version = '3.3.2'
+    }
+    buildToolsVersion = '29.0.2'
+}
+
+repositories {
+    flatDir {
+        dirs 'libs'
     }
 }
 
-allprojects {
-    repositories {
-        mavenCentral()
-        maven { url 'https://maven.google.com' }
-        maven { url 'https://jitpack.io' }
-        google()
-        jcenter()
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestImplementation('androidx.test.espresso:espresso-core:3.1.0', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    implementation 'com.squareup.retrofit2:retrofit:2.3.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.8.0'
+    implementation('com.crashlytics.sdk.android:crashlytics:2.8.0@aar') {
+        transitive = true
     }
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.multidex:multidex:2.0.1'
+    testImplementation 'junit:junit:4.12'
 }
-
-task clean(type: Delete) {
-    delete rootProject.buildDir
-}
+apply plugin: 'com.google.gms.google-services'
 
