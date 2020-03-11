@@ -13,12 +13,8 @@
         android:id="@+id/edit_placeSearch"
         android:layout_width="match_parent"
         android:layout_marginLeft="12dp"
-        android:hint="@string/place_autocomplete_search_hint"
+        android:hint="@android:string/search_go"
         android:layout_height="wrap_content"/>
-<!--    <TextView-->
-<!--        android:id="@+id/txtViewLocation"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"/>-->
     <TextView
         android:id="@+id/txtViewAddress"
         android:layout_width="wrap_content"
