@@ -1,10 +1,10 @@
-package com.taxiappz.client.place_api;
+package nplus.atlas.place_api;
 
 import android.text.TextUtils;
 
 import com.google.gson.Gson;
-import com.taxiappz.client.retro.GitHubService;
-import com.taxiappz.client.retro.responsemodel.PredictionModel;
+import nplus.atlas.retro.GitHubService;
+import nplus.atlas.retro.responsemodel.PredictionModel;
 
 import java.util.concurrent.TimeUnit;
 

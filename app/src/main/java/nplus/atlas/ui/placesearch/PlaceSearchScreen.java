@@ -1,4 +1,4 @@
-package com.taxiappz.client.ui.placesearch;
+package nplus.atlas.ui.placesearch;
 
 import android.os.Bundle;
 import android.text.Editable;
@@ -13,10 +13,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.taxiappz.client.R;
-import com.taxiappz.client.place_api.SearchListener;
-import com.taxiappz.client.place_api.SearchPlaceHelper;
-import com.taxiappz.client.retro.responsemodel.PredictionModel;
+import nplus.atlas.R;
+import nplus.atlas.place_api.SearchListener;
+import nplus.atlas.place_api.SearchPlaceHelper;
+import nplus.atlas.retro.responsemodel.PredictionModel;
 
 import java.util.ArrayList;
 import java.util.List;

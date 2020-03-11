@@ -1,6 +1,6 @@
-package com.taxiappz.client.retro;
+package nplus.atlas.retro;
 
-import com.taxiappz.client.retro.responsemodel.PredictionModel;
+import nplus.atlas.retro.responsemodel.PredictionModel;
 
 import retrofit2.Call;
 import retrofit2.http.GET;

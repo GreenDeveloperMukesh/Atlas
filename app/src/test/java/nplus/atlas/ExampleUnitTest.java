@@ -1,4 +1,4 @@
-package com.taxiappz.client;
+package nplus.atlas;
 
 import org.junit.Test;
 

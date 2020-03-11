@@ -1,6 +1,6 @@
-package com.taxiappz.client.place_api;
+package nplus.atlas.place_api;
 
-import com.taxiappz.client.retro.responsemodel.PredictionModel;
+import nplus.atlas.retro.responsemodel.PredictionModel;
 
 import java.util.List;
 

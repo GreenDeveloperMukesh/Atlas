@@ -1,4 +1,4 @@
-package com.taxiappz.client.retro.responsemodel;
+package nplus.atlas.retro.responsemodel;
 
 import com.google.gson.annotations.SerializedName;
 

@@ -1,4 +1,4 @@
-package com.taxiappz.client.ui.placesearch;
+package nplus.atlas.ui.placesearch;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -7,7 +7,7 @@ import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.taxiappz.client.retro.responsemodel.PredictionModel;
+import nplus.atlas.retro.responsemodel.PredictionModel;
 
 import java.util.List;
 
