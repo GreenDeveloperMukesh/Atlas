@@ -1,6 +1,6 @@
-package com.taxiappz.client.place_api;
+package com.nplus.searchplacehelplibrary;
 
-import com.taxiappz.client.retro.responsemodel.PredictionModel;
+import com.nplus.searchplacehelplibrary.retro.responsemodel.PredictionModel;
 
 import java.util.List;
 

@@ -1,10 +1,10 @@
-package com.taxiappz.client.place_api;
+package com.nplus.searchplacehelplibrary;
 
 import android.text.TextUtils;
 
 import com.google.gson.Gson;
-import com.taxiappz.client.retro.GitHubService;
-import com.taxiappz.client.retro.responsemodel.PredictionModel;
+import com.nplus.searchplacehelplibrary.retro.GitHubService;
+import com.nplus.searchplacehelplibrary.retro.responsemodel.PredictionModel;
 
 import java.util.concurrent.TimeUnit;
 

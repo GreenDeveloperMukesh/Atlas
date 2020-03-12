@@ -13,10 +13,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.nplus.searchplacehelplibrary.SearchListener;
+import com.nplus.searchplacehelplibrary.SearchPlaceHelper;
 import com.taxiappz.client.R;
-import com.taxiappz.client.place_api.SearchListener;
-import com.taxiappz.client.place_api.SearchPlaceHelper;
-import com.taxiappz.client.retro.responsemodel.PredictionModel;
+import com.nplus.searchplacehelplibrary.retro.responsemodel.PredictionModel;
 
 import java.util.ArrayList;
 import java.util.List;

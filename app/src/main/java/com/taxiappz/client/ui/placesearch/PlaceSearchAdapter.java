@@ -7,7 +7,7 @@ import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.taxiappz.client.retro.responsemodel.PredictionModel;
+import com.nplus.searchplacehelplibrary.retro.responsemodel.PredictionModel;
 
 import java.util.List;
 

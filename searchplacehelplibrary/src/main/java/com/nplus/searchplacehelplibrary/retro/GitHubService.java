@@ -1,6 +1,6 @@
-package com.taxiappz.client.retro;
+package com.nplus.searchplacehelplibrary.retro;
 
-import com.taxiappz.client.retro.responsemodel.PredictionModel;
+import com.nplus.searchplacehelplibrary.retro.responsemodel.PredictionModel;
 
 import retrofit2.Call;
 import retrofit2.http.GET;

@@ -1,4 +1,4 @@
-package com.taxiappz.client.retro.responsemodel;
+package com.nplus.searchplacehelplibrary.retro.responsemodel;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
