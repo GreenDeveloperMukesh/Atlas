@@ -20,7 +20,7 @@ allprojects {
 Add the dependency
 ```
 dependencies {
-	        implementation 'com.github.GreenDeveloperMukesh:Atlas:v1.1'
+	        implementation 'com.github.GreenDeveloperMukesh:Atlas:Tag'
 	}
 ```
 
