@@ -6,22 +6,21 @@ Alternate for Google Places Search and Geocoding library, with the purpose of us
 # To get a Git project into your build:
 
 # Step 1. 
-Add the JitPack repository to your build file 
-Add it in your root build.gradle at the end of repositories:
+place the module 'searchplacehelplibrary' from this project to your project 
+
+# Step 2.
+add in settings.gradle as below:
 ```
-allprojects {
-		repositories {
-			...
-			maven { url 'https://jitpack.io' }
-		}
-	}
-```
+include ':app', ':searchplacehelplibrary'
+
+``` 
+
+
 # Step 2. 
-Add the dependency
+Add the dependency app/build.gradle
 ```
-dependencies {
-	        implementation 'com.github.GreenDeveloperMukesh:Atlas:Tag'
-	}
+implementation project(':searchplacehelplibrary')
+
 ```
 
 
