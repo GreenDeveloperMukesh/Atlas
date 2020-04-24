@@ -1,11 +1,14 @@
 package com.nplus.searchplacehelplibrary;
 
+import android.content.Context;
+import android.location.Location;
 import android.text.TextUtils;
 
 import com.google.gson.Gson;
 import com.nplus.searchplacehelplibrary.retro.GitHubService;
 import com.nplus.searchplacehelplibrary.retro.responsemodel.PredictionModel;
 
+import java.util.HashMap;
 import java.util.concurrent.TimeUnit;
 
 import okhttp3.OkHttpClient;
@@ -17,21 +20,26 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 public class SearchPlaceHelper {
-    public static String baseURL;
-    public static SearchListener searchListener;
-    public static GitHubService gitHubService;
+    private static String baseURL;
+    private static SearchListener searchListener;
+    private static GitHubService gitHubService;
+    private static Context ctxt;
+    private static HashMap<String, String> map = new HashMap();
 
-    public static void init(String baseurl, SearchListener searchlistener) {
+    public static void init(String baseurl, SearchListener searchlistener, Context context) {
         baseURL = baseurl;
+        ctxt = context;
         searchListener = searchlistener;
         if (gitHubService == null)
             initialiseGithubService();
-
     }
 
-    public static void searchPlace(String input) {
+    public static void searchPlace(String input, Double lat, Double lng) {
         if (input != null && !TextUtils.isEmpty(input)) {
-            gitHubService.searchPlace(input).enqueue(predictionModelCallback);
+            map.clear();
+            map.put("lat", "" + lat);
+            map.put("lng", "" + lng);
+            gitHubService.searchPlace(input, map).enqueue(predictionModelCallback);
         }
     }
 
@@ -82,9 +90,9 @@ public class SearchPlaceHelper {
             if (response.isSuccessful() && response.body() != null) {
 
                 if (response.body().locaion_details != null
-                        && response.body().locaion_details.result!= null
-                        && response.body().locaion_details.result.geometry!= null
-                        && response.body().locaion_details.result.geometry.location!= null) {
+                        && response.body().locaion_details.result != null
+                        && response.body().locaion_details.result.geometry != null
+                        && response.body().locaion_details.result.geometry.location != null) {
 
                     searchListener.onSuccessGeocoding(response.body().locaion_details.result.geometry.location);
                 } else {
